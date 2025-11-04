@@ -5,35 +5,36 @@ include::attributes.adoc[]
 Блок имеет следующий список портов ввода-вывода.
 
 .All Ports
-[cols="^1,^1000000000,^1,^1,<1000", options="header"]
+[cols="1,3,1,1,3", options="header"]
 |===
-    | Port                                | Width           | Direction   | Clock     | Description
- 5+<| *Clock*
-    | clk_i             | 1               | input       | -         | APB clock signal
- 5+<| *Resets*
-    | rst_i             | 1               | input       | async     | global reset signal, active low
- 5+<| *Bus APB Masters* (входные интерфейсы)
-    | Сигнал       | Разрядность                      | Направление | Тактовый домен | Описание
-    | paddr_m      | [APB_ADDR_WIDTH-1:0]         | input       | clk_i          | Адрес от мастера
-    | pwdata_m     | [APB_DATA_WIDTH-1:0]           | input       | clk_i          | Данные для записи от мастера
-    | pwrite_m     | 1                                | input       | clk_i          | Тип транзакции (1-запись/0-чтение)
-    | psel_m       | [NUM_APB_MASTERS-1:0]          | input       | clk_i          | Выбор мастера
-    | penable_m    | [NUM_APB_MASTERS-1:0]          | input       | clk_i          | Разрешение передачи от мастера
-    | pready_m     | [NUM_APB_MASTERS-1:0]          | output      | clk_i          | Готовность для мастера
-    | pslverr_m    | [NUM_APB_MASTERS-1:0]          | output      | clk_i          | Флаг ошибки для мастера
-    | pprot_m      |      | output           | clk_i          | Сигналы защиты
-    | pstrb_m      |    | output          | clk_i          | Стробы записи
- 5+<| *Bus APB Slave* (выходной интерфейс)
-    | Сигнал       | Разрядность          | Направление | Тактовый домен | Описание
-    | paddr_s      | [APB_ADDR_WIDTH-1:0]           | output      | clk_i          | Адрес к slave-устройству
-    | pwdata_s     | [APB_DATA_WIDTH-1:0]           | output      | clk_i          | Данные для записи к slave
-    | pwrite_s     | 1                    | output      | clk_i          | Тип транзакции к slave
-    | psel_s       | 1                    | output      | clk_i          | Выбор slave-устройства
-    | penable_s    | 1                    | output      | clk_i          | Разрешение передачи к slave
-    | prdata_s     | [APB_DATA_WIDTH-1:0]      | input       | clk_i          | Данные чтения от slave
-    | pready_s     | 1                    | input       | clk_i          | Готовность slave-устройства
-    | pslverr_s    | 1                    | input       | clk_i          | Флаг ошибки slave
-    | pprot_m      |     | output      | clk_i          | Сигнал защиты
-    | pstrb_m      |     | output      | clk_i          | Строб записи
-// 5+<| *Additional*
+| Port | Width | Direction | Clock | Description
+
+5+<| *Clock*
+| clk_i | 1 | input | - | APB clock signal
+
+5+<| *Resets*
+| rst_i | 1 | input | async | global reset signal, active low
+
+5+<| *Bus APB Masters* (входные интерфейсы)
+| paddr_m | [APB_ADDR_WIDTH-1:0] | input | clk_i | Адрес от мастера
+| pwdata_m | [APB_DATA_WIDTH-1:0] | input | clk_i | Данные для записи от мастера
+| pwrite_m | 1 | input | clk_i | Тип транзакции (1-запись/0-чтение)
+| psel_m | [NUM_APB_MASTERS-1:0] | input | clk_i | Выбор мастера
+| penable_m | [NUM_APB_MASTERS-1:0] | input | clk_i | Разрешение передачи от мастера
+| pready_m | [NUM_APB_MASTERS-1:0] | output | clk_i | Готовность для мастера
+| pslverr_m | [NUM_APB_MASTERS-1:0] | output | clk_i | Флаг ошибки для мастера
+| pprot_m | 3 | output | clk_i | Сигналы защиты
+| pstrb_m | 4 | output | clk_i | Стробы записи
+
+5+<| *Bus APB Slave* (выходной интерфейс)
+| paddr_s | [APB_ADDR_WIDTH-1:0] | output | clk_i | Адрес к slave-устройству
+| pwdata_s | [APB_DATA_WIDTH-1:0] | output | clk_i | Данные для записи к slave
+| pwrite_s | 1 | output | clk_i | Тип транзакции к slave
+| psel_s | 1 | output | clk_i | Выбор slave-устройства
+| penable_s | 1 | output | clk_i | Разрешение передачи к slave
+| prdata_s | [APB_DATA_WIDTH-1:0] | input | clk_i | Данные чтения от slave
+| pready_s | 1 | input | clk_i | Готовность slave-устройства
+| pslverr_s | 1 | input | clk_i | Флаг ошибки slave
+| pprot_s | 3 | output | clk_i | Сигнал защиты
+| pstrb_s | 4 | output | clk_i | Строб записи
 |===
