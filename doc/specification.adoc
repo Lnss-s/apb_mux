@@ -1,0 +1,49 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+:doctype: book
+:toc:
+:toclevels: 5
+:toc-title: Table of contents
+:numbered:
+:sectnumlevels: 5
+:sectids:
+:docdir: .
+include::attributes.adoc[]
+= Микроархитектурная спецификация 
+APB multiplexer
+
+include::glossary.adoc[leveloffset=+1]
+
+include::introduction.adoc[leveloffset=+1]
+
+include::purpose.adoc[leveloffset=+2]
+
+include::basic_function.adoc[leveloffset=+2]
+
+include::configuration_param.adoc[leveloffset=+2]
+
+include::functional_description.adoc[leveloffset=+1]
+
+include::block_diagram.adoc[leveloffset=+2]
+
+include::work_description.adoc[leveloffset=+2]
+
+include::optional.adoc[leveloffset=+2]
+
+include::description_all_ports.adoc[leveloffset=+1]
+
+include::description_clk_ports.adoc[leveloffset=+2]
+
+include::description_rst_ports.adoc[leveloffset=+2]
+
+include::description_bus_ports.adoc[leveloffset=+2]
+
+include::initialization.adoc[leveloffset=+2]
+
+include::work_with_reset.adoc[leveloffset=+2]
+
+include::power_architecture.adoc[leveloffset=+1]
+
+include::bibliography.adoc[leveloffset=+1]
+
+include::document_version.adoc[leveloffset=+1]
+

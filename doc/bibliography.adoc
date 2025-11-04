@@ -1,0 +1,11 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Bibliography
+
+[[ymp_lit]]
+.Literature
+[cols="^17,^18,<58,^7", options="header"]
+|===
+    | Name               | Link  | Local Path            | Year
+    | APB4 Specification |       |                       | 
+|===

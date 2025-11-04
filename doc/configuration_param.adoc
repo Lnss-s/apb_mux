@@ -1,0 +1,18 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Configuration
+
+[[ymp_cfg_prm]]
+.Parameters
+[cols="^28,^15,<70", options="header"]
+|===
+    | Parameter       | Value range | Description
+    
+    | APB_ADDR_WIDTH  | 8-32        | ширина адреса APB до 32 бит +
+                                      Default: 32
+    | APB_DATA_WIDTH  | 8-32          | ширина данных APB 32 бит +
+                                        Допустимые значения 8,16,32 +
+                                        Default: 32
+    | NUM_APB_MASTERS  | 1-32        | количество подключаемых APB Master устройств +
+                                      Default: 16
+|===

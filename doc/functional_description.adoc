@@ -1,0 +1,3 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Functional description

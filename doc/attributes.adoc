@@ -1,0 +1,15 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+:chapter-signifier: Chapter
+:figure-caption: Figure
+:table-caption: Table
+:idprefix: ymp_
+:idseparator: _
+:imagesdir: ./img
+:IMGEXT: svg
+:LINK: link
+:DSC_REG: {LINK}:description_registers.adoc
+:CFG_PRM: {LINK}:configuration_param.adoc
+:BBL: {LINK}:bibliography.adoc
+:BLOCK_NAME:
+:BLOCK_PREF:
+

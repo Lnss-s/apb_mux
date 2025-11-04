@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-elaborate
+-elabonly
+-64bit
+-top
+tb_adder
+-snapshot
+tb_adder_opt
+-xmlibdirpath
+/home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/work
+-access
++rwc
+-l
+/home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/opt.log

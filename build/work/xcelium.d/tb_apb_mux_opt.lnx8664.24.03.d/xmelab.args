@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/AMSD
+-ACCESS
++rwc
+-no_analogsolver
+-MESSAGES
+tb_apb_mux_top
+-XLMODE
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/tb_apb_mux_opt.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/tb_apb_mux_opt.lnx8664.24.03.d/cds.lib
+-HDLVAR
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/tb_apb_mux_opt.lnx8664.24.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP

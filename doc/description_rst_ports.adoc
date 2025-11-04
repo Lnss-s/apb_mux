@@ -1,0 +1,9 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Reset ports description
+
+В данном блоке используются следующие сигналы сброса:
+
+* PRESETn +
+Активный уровень: 0
+Сбрасывает всю логику блока.

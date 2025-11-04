@@ -1,0 +1,6 @@
+define XMSIMRC	( /local/tools/cadence/XCELIUM/24.03.001/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+define AMSRC	( /local/tools/cadence/XCELIUM/24.03.001/tools/xcelium/files/amsrc, ~/.amsrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.tb_apb_mux_top:sv
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )

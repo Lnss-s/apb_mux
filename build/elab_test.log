@@ -1,0 +1,20 @@
+xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 16:23:33 MSK
+xrun
+	-elaborate
+	-64bit
+	-top tb_apb_mux_top
+	-snapshot tb_apb_mux_top_opt
+	-xmlibdirpath work
+	-access +rwc
+	-l elab_test.log
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_apb_mux_top
+	Modules w/wo timescales:
+		timescale of worklib.tb_apb_mux_top:sv = 1ns/1ps
+		timescale of worklib.apb_mux_top:sv = NOTSET
+xmelab: *F,CUMSTS: Timescale directive missing on one or more modules.
+xrun: *E,ELBERR: Error (*E) or soft error (*SE) occurred during elaboration (status 2), exiting.
+TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 16:23:33 MSK  (total: 00:00:00)

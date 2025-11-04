@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-compile
+-64bit
+/home/Lnss_313/Desktop/apb_mux/build/apb_mux_xcelium.sv
+/home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv
+-xmlibdirpath
+/home/Lnss_313/Desktop/apb_mux/build/work
+-l
+/home/Lnss_313/Desktop/apb_mux/build/compile.log

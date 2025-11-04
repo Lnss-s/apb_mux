@@ -1,0 +1,12 @@
+xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 16:21:32 MSK
+xrun
+	-compile
+	-64bit
+	../rtl/apb_mux.sv
+	-xmlibdirpath work
+	-l rtl_compile.log
+file: ../rtl/apb_mux.sv
+	module worklib.apb_mux_top:sv
+		errors: 0, warnings: 0
+TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 16:21:33 MSK  (total: 00:00:01)

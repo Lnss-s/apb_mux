@@ -1,0 +1,5 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Initialization
+
+Блок переходит в рабочее состояние при неактивном уровне сброса.

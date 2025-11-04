@@ -1,0 +1,23 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/AMSD
+-MESSAGES
++EMGRLOG
+/home/Lnss_313/Desktop/apb_mux/build/compile.log
+-XLSTIME
+1762265857
+-XLKEEP
+-XLMODE
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	24.03-s001"

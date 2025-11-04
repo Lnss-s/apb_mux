@@ -1,0 +1,5 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Power architecture
+
+Вся логика находится в одном домене питания. Специальных требований не предъявляется.

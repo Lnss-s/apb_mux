@@ -1,0 +1,9 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Bus interfaces description
+
+В блоке исползуются следующие интерфейсы:
+
+* APB4 slave интерфейс +
+* APB4 master интерфейс +
+

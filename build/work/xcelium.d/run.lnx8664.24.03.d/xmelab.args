@@ -1,0 +1,18 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/AMSD
+-no_analogsolver
+-MESSAGES
+-XLMODE
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

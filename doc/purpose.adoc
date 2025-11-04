@@ -1,0 +1,5 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Purpose
+
+APB Multiplexer — блок, обеспечивающий взаимодействие нескольких мастер-устройств с одним ведомым устройством через APB4 интерфейс. 

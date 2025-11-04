@@ -1,0 +1,5 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Work with reset
+
+Сброс мультиплексора осуществляется внешним асинхронным сигланом rst_n_i.

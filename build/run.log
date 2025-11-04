@@ -1,0 +1,17 @@
+xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 17:17:38 MSK
+xrun
+	-r tb_apb_mux_top_opt
+	-64bit
+	-xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work
+	-seed 12345
+	-l /home/Lnss_313/Desktop/apb_mux/build/run.log
+Loading snapshot worklib.tb_apb_mux_top_opt:sv .................... Done
+SVSEED set from command line: 12345
+xcelium> source /local/tools/cadence/XCELIUM/24.03.001/tools/xcelium/files/xmsimrc
+xcelium> run
+All Tests Completed Successfully - Round Robin Arbitration Working Correctly
+Simulation complete via $finish(1) at time 635 NS + 0
+../tb/tb_apb_mux.sv:189     $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 17:17:39 MSK  (total: 00:00:01)

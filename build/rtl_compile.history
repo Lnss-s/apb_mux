@@ -1,0 +1,40 @@
+#e1(29Oct2025:17:49:22): source /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/work/xcelium.d/env.d/env.history.29Oct2025_17_49_22
+s1(29Oct2025:17:49:22):  xrun -compile -64bit /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/../rtl/adder.sv /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/../tb/tb_adder.sv -xmlibdirpath /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/work -l /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/compile.log 
+#e2(29Oct2025:17:49:41): source /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/work/xcelium.d/env.d/env.history.29Oct2025_17_49_41
+s2(29Oct2025:17:49:41):  xrun -elaborate -elabonly -64bit -top tb_adder -snapshot tb_adder_opt -xmlibdirpath /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/work -access +rwc -l /home/Lnss_313/Desktop/DT-FVB/Labs/05.BasicFV/01_basic_env/build/opt.log 
+#e3(04Nov2025:16:02:14): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_02_14
+s3(04Nov2025:16:02:14):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e4(04Nov2025:16:02:15): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_02_15
+s4(04Nov2025:16:02:15):  xrun -elaborate -elabonly -64bit -top tb_apb_mux -snapshot tb_apb_mux_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e5(04Nov2025:16:03:50): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_03_50
+s5(04Nov2025:16:03:50):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e6(04Nov2025:16:03:51): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_03_51
+s6(04Nov2025:16:03:51):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e7(04Nov2025:16:07:21): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_07_21
+s7(04Nov2025:16:07:21):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e8(04Nov2025:16:07:22): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_07_22
+s8(04Nov2025:16:07:22):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e9(04Nov2025:16:09:11): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_09_11
+s9(04Nov2025:16:09:11):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e10(04Nov2025:16:09:12): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_09_12
+s10(04Nov2025:16:09:12):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e11(04Nov2025:16:13:49): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_13_49
+s11(04Nov2025:16:13:49):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e12(04Nov2025:16:13:50): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_13_50
+s12(04Nov2025:16:13:50):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e13(04Nov2025:16:14:27): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_14_27
+s13(04Nov2025:16:14:27):  xrun -compile -64bit /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e14(04Nov2025:16:14:27): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_14_27
+s14(04Nov2025:16:14:27):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e15(04Nov2025:16:16:43): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_16_43
+s15(04Nov2025:16:16:43):  xrun -compile -64bit -timescale 1ns/1ps /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e16(04Nov2025:16:16:43): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_16_43
+s16(04Nov2025:16:16:43):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e17(04Nov2025:16:16:56): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_16_56
+s17(04Nov2025:16:16:56):  xrun -compile -64bit -timescale 1ns/1ps /home/Lnss_313/Desktop/apb_mux/build/../rtl/apb_mux.sv /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -l /home/Lnss_313/Desktop/apb_mux/build/compile.log 
+#e18(04Nov2025:16:16:56): source /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/env.d/env.history.04Nov2025_16_16_56
+s18(04Nov2025:16:16:56):  xrun -elaborate -elabonly -64bit -top tb_apb_mux_top -snapshot tb_apb_mux_top_opt -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -access +rwc -l /home/Lnss_313/Desktop/apb_mux/build/opt.log 
+#e19(04Nov2025:16:20:20): source work/xcelium.d/env.d/env.history.04Nov2025_16_20_20
+s19(04Nov2025:16:20:20):  xrun -compile -64bit ../rtl/apb_mux_minimal.sv -xmlibdirpath work -l minimal_compile.log 
+#e20(04Nov2025:16:21:33): source work/xcelium.d/env.d/env.history.04Nov2025_16_21_33
+s20(04Nov2025:16:21:33):  xrun -compile -64bit ../rtl/apb_mux.sv -xmlibdirpath work -l rtl_compile.log 

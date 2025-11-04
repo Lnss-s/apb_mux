@@ -1,0 +1,8 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Clock ports description
+
+В данном блоке используются следующие тактовые сигналы:
+
+* clk_i +
+Cигнал синхронизации, тактирующий работу APB4 интерфейса

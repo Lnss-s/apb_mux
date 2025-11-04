@@ -1,0 +1,10 @@
+xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 16:20:19 MSK
+xrun
+	-compile
+	-64bit
+	../rtl/apb_mux_minimal.sv
+	-xmlibdirpath work
+	-l minimal_compile.log
+xrun: *E,FILEMIS: Cannot find the provided file ../rtl/apb_mux_minimal.sv.
+TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 16:20:20 MSK  (total: 00:00:01)
