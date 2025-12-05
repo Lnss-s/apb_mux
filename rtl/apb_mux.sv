@@ -1,4 +1,3 @@
-Alina, [05.12.2025 9:52]
 module apb_mux_top #(
     parameter NUM_APB_MASTERS = 16,
     parameter APB_ADDR_WIDTH  = 32,
@@ -32,22 +31,23 @@ module apb_mux_top #(
     input                           PSLVERR_m
 );
 
-    // Pointer width ??? round-robin
+    // Pointer width  
     localparam PTR_WIDTH = $clog2(NUM_APB_MASTERS);
 
     // ----------------------
     // Internal signals
     // ----------------------
     logic [PTR_WIDTH-1:0]              ptr;            // round-robin pointer
-    logic [NUM_APB_MASTERS-1:0]        current_master; // ??????? ?????? ? ACCESS
-    logic [NUM_APB_MASTERS-1:0]        gnt;            // ??????? grant
+    logic [NUM_APB_MASTERS-1:0]        current_master; 
+    logic [NUM_APB_MASTERS-1:0]        gnt;            
     logic [NUM_APB_MASTERS-1:0]        shift_req;
     logic [NUM_APB_MASTERS-1:0]        shift_gnt;
     logic [2*NUM_APB_MASTERS-1:0]      double_req, double_gnt;
 
     logic found;
+
     // ----------------------
-    // Round-robin arbiter ??? break
+    // Round-robin arbiter 
     // ----------------------
     always_comb begin
         double_req = {PSEL_s, PSEL_s} >> ptr;
@@ -113,8 +113,7 @@ module apb_mux_top #(
         endcase
     end
 
-Alina, [05.12.2025 9:52]
-// State register + current_master update
+    // State register and current_master update
     always_ff @(posedge PCLK or negedge PRESETn) begin
         if (!PRESETn) begin
             current_state  <= IDLE;
