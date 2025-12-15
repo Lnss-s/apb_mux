@@ -5,22 +5,23 @@ module tb_apb_mux_top;
   parameter NUM_APB_MASTERS = 9;
   parameter APB_ADDR_WIDTH = 32;
   parameter APB_DATA_WIDTH = 32;
+  parameter APB_STRB_WIDTH = 4;
   parameter CLK_PERIOD = 10;
 
   logic PRESETn;
   logic PCLK;
   
   // From masters
-  logic [NUM_APB_MASTERS-1:0] PSEL_s;
-  logic [APB_ADDR_WIDTH-1:0] PADDR_s [NUM_APB_MASTERS];
-  logic [NUM_APB_MASTERS-1:0] PWRITE_s;
-  logic [APB_DATA_WIDTH-1:0] PWDATA_s [NUM_APB_MASTERS];
-  logic [NUM_APB_MASTERS-1:0] PENABLE_s;
-  logic [NUM_APB_MASTERS-1:0] PSTRB_s;  
-  logic [NUM_APB_MASTERS-1:0] PPROT_s;  
-  logic [APB_DATA_WIDTH-1:0] PRDATA_s [NUM_APB_MASTERS];
-  logic [NUM_APB_MASTERS-1:0] PREADY_s;
-  logic [NUM_APB_MASTERS-1:0] PSLVERR_s;
+  logic                        PSEL_s [NUM_APB_MASTERS];
+  logic [APB_ADDR_WIDTH-1:0]   PADDR_s [NUM_APB_MASTERS];
+  logic                        PWRITE_s [NUM_APB_MASTERS];
+  logic [APB_DATA_WIDTH-1:0]   PWDATA_s [NUM_APB_MASTERS];
+  logic                        PENABLE_s [NUM_APB_MASTERS];
+  logic [APB_STRB_WIDTH - 1:0] PSTRB_s [NUM_APB_MASTERS];  
+  logic                        PPROT_s [NUM_APB_MASTERS];  
+  logic [APB_DATA_WIDTH-1:0]   PRDATA_s [NUM_APB_MASTERS];
+  logic                        PREADY_s [NUM_APB_MASTERS];
+  logic                        PSLVERR_s [NUM_APB_MASTERS];
   
   // To slave
   logic PSEL_m;
@@ -39,7 +40,8 @@ module tb_apb_mux_top;
   apb_mux_top #(
     .NUM_APB_MASTERS(NUM_APB_MASTERS),
     .APB_ADDR_WIDTH(APB_ADDR_WIDTH),
-    .APB_DATA_WIDTH(APB_DATA_WIDTH)
+    .APB_DATA_WIDTH(APB_DATA_WIDTH),
+    .APB_STRB_WIDTH(APB_STRB_WIDTH)
   ) dut (
     .PRESETn(PRESETn),
     .PCLK(PCLK),
@@ -127,13 +129,13 @@ module tb_apb_mux_top;
   initial begin
     PRESETn = 1'b0;
     PCLK = 1'b0;
-    PSEL_s = '0;
-    PENABLE_s = '0;
-    PSTRB_s = '0;
-    PPROT_s = '0;
-    PADDR_s = '{default: '0};
-    PWDATA_s = '{default: '0};
-    PWRITE_s = '0;
+    PSEL_s    = '{default: 1'b0};
+    PENABLE_s = '{default: 1'b0};
+    PSTRB_s   = '{default: '0};
+    PPROT_s   = '{default: 1'b0};
+    PWRITE_s  = '{default: 1'b0};
+    PADDR_s   = '{default: '0};
+    PWDATA_s  = '{default: '0};
     
     #(CLK_PERIOD*2);
     PRESETn = 1'b1;

@@ -1,22 +1,23 @@
 module apb_mux_top #(
     parameter NUM_APB_MASTERS = 16,
     parameter APB_ADDR_WIDTH  = 32,
-    parameter APB_DATA_WIDTH  = 32
+    parameter APB_DATA_WIDTH  = 32,
+    parameter APB_STRB_WIDTH  = 4
 )(
     input                       PRESETn,
     input                       PCLK,
 
     // From masters
-    input  [NUM_APB_MASTERS-1:0]           PSEL_s,
-    input  [APB_ADDR_WIDTH-1:0]            PADDR_s [NUM_APB_MASTERS],
-    input  [NUM_APB_MASTERS-1:0]           PWRITE_s,
-    input  [APB_DATA_WIDTH-1:0]            PWDATA_s [NUM_APB_MASTERS],
-    input  [NUM_APB_MASTERS-1:0]           PENABLE_s,
-    input  [NUM_APB_MASTERS-1:0]           PSTRB_s,  
-    input  [NUM_APB_MASTERS-1:0]           PPROT_s,  
-    output reg [APB_DATA_WIDTH-1:0]        PRDATA_s [NUM_APB_MASTERS],
-    output reg [NUM_APB_MASTERS-1:0]       PREADY_s,
-    output reg [NUM_APB_MASTERS-1:0]       PSLVERR_s,
+    input                                  PSEL_s    [NUM_APB_MASTERS],
+    input      [APB_ADDR_WIDTH-1:0]        PADDR_s   [NUM_APB_MASTERS],
+    input                                  PWRITE_s  [NUM_APB_MASTERS],
+    input      [APB_DATA_WIDTH-1:0]        PWDATA_s  [NUM_APB_MASTERS],
+    input                                  PENABLE_s [NUM_APB_MASTERS],
+    input      [APB_STRB_WIDTH-1:0]          PSTRB_s   [NUM_APB_MASTERS],  
+    input                                  PPROT_s   [NUM_APB_MASTERS],  
+    output reg [APB_DATA_WIDTH-1:0]        PRDATA_s  [NUM_APB_MASTERS],
+    output reg                             PREADY_s  [NUM_APB_MASTERS],
+    output reg                             PSLVERR_s [NUM_APB_MASTERS],
 
     // To slave
     output reg                      PSEL_m,
@@ -46,11 +47,17 @@ module apb_mux_top #(
 
     logic found;
 
+    logic [NUM_APB_MASTERS-1:0] PSEL_packed;
+
     // ----------------------
     // Round-robin arbiter 
     // ----------------------
     always_comb begin
-        double_req = {PSEL_s, PSEL_s} >> ptr;
+        for (int i = 0; i < NUM_APB_MASTERS; i++) begin
+            PSEL_packed[i] = PSEL_s[i];
+        end
+
+        double_req = {PSEL_packed, PSEL_packed} >> ptr;
         shift_req  = double_req[NUM_APB_MASTERS-1:0];
 
         shift_gnt = '0;
