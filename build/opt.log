@@ -1,5 +1,5 @@
 xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 17:17:38 MSK
+TOOL:	xrun(64)	24.03-s001: Started on Dec 18, 2025 at 21:56:31 MSK
 xrun
 	-elaborate
 	-elabonly
@@ -9,29 +9,4 @@ xrun
 	-xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work
 	-access +rwc
 	-l /home/Lnss_313/Desktop/apb_mux/build/opt.log
-No source files were detected on the command line yet something was detected as out of date: Missing module worklib.tb_apb_mux_top:sv (SIG) <0x276d1243>.
-Rerun with the required source files to ensure recompile.
-	Elaborating the design hierarchy:
-		Caching library 'worklib' ....... Done
-	Top level design units:
-		tb_apb_mux_top
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.tb_apb_mux_top:sv <0x1fc529f6>
-			streams:  45, words: 42017
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                 Instances  Unique
-		Modules:                 2       2
-		Registers:              50      50
-		Scalar wires:           14       -
-		Vectored wires:         17       -
-		Always blocks:          16       8
-		Initial blocks:          2       2
-		Parallel blocks:         4       4
-		Pseudo assignments:     22       -
-		Process Clocks:          2       2
-		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.tb_apb_mux_top_opt:sv
-TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 17:17:38 MSK  (total: 00:00:00)
+TOOL:	xrun(64)	24.03-s001: Exiting on Dec 18, 2025 at 21:56:31 MSK  (total: 00:00:00)

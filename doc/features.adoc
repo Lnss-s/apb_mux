@@ -1,0 +1,7 @@
+// vim:fileencoding=utf-8:ft=asciidoc:foldmethod=marker:foldmarker=//<,//>
+include::attributes.adoc[]
+= Features
+
+• Параметризируемое количество подключаемых APB Master устройств (1-32)
+• Параметризируемая ширина шины данных и адреса
+• Round-robin арбитраж между мастер-устройствами

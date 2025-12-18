@@ -30,7 +30,7 @@ fi
 
 echo "=== Running Simulation ==="
 xrun -r tb_apb_mux_top_opt -64bit -xmlibdirpath ${curdir}/work \
-    -seed 12345 -l ${curdir}/run.log
+    -seed 12345 -gui -l ${curdir}/run.log
 
 # Удаляем временный файл
 echo "=== Cleaning up temporary files ==="

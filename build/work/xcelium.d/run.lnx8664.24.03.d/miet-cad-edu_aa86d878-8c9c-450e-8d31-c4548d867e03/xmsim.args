@@ -4,11 +4,17 @@
 //
 -amsdlibdir
 /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/AMSD
+-gui
 -MESSAGES
+-svseed
+12345
+-sndynseed
+12345
+tb_apb_mux_top_opt
 +EMGRLOG
-/home/Lnss_313/Desktop/apb_mux/build/compile.log
+/home/Lnss_313/Desktop/apb_mux/build/run.log
 -XLSTIME
-1766084190
+1765532524
 -XLKEEP
 -XLMODE
 /home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/run.lnx8664.24.03.d
@@ -21,3 +27,8 @@
 xrun
 -XLVERSION
 "TOOL:	xrun(64)	24.03-s001"
+-CMDPSIM
+-amsdlibdir
+/home/Lnss_313/Desktop/apb_mux/build/work/xcelium.d/AMSD
+-XLNAME
+./work/xcelium.d/run.lnx8664.24.03.d/miet-cad-edu_aa86d878-8c9c-450e-8d31-c4548d867e03

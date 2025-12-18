@@ -5,35 +5,35 @@ module tb_apb_mux_top;
   parameter NUM_APB_MASTERS = 9;
   parameter APB_ADDR_WIDTH = 32;
   parameter APB_DATA_WIDTH = 32;
-  parameter APB_STRB_WIDTH = 4;
+  parameter APB_STRB_WIDTH = APB_DATA_WIDTH/8;
   parameter CLK_PERIOD = 10;
 
   logic PRESETn;
   logic PCLK;
   
   // From masters
-  logic                        PSEL_s [NUM_APB_MASTERS];
-  logic [APB_ADDR_WIDTH-1:0]   PADDR_s [NUM_APB_MASTERS];
-  logic                        PWRITE_s [NUM_APB_MASTERS];
-  logic [APB_DATA_WIDTH-1:0]   PWDATA_s [NUM_APB_MASTERS];
+  logic                        PSEL_s    [NUM_APB_MASTERS];
+  logic [APB_ADDR_WIDTH-1:0]   PADDR_s   [NUM_APB_MASTERS];
+  logic                        PWRITE_s  [NUM_APB_MASTERS];
+  logic [APB_DATA_WIDTH-1:0]   PWDATA_s  [NUM_APB_MASTERS];
   logic                        PENABLE_s [NUM_APB_MASTERS];
-  logic [APB_STRB_WIDTH - 1:0] PSTRB_s [NUM_APB_MASTERS];  
-  logic                        PPROT_s [NUM_APB_MASTERS];  
-  logic [APB_DATA_WIDTH-1:0]   PRDATA_s [NUM_APB_MASTERS];
-  logic                        PREADY_s [NUM_APB_MASTERS];
+  logic [APB_STRB_WIDTH-1:0]   PSTRB_s   [NUM_APB_MASTERS];  
+  logic [2:0]                  PPROT_s   [NUM_APB_MASTERS];  
+  logic [APB_DATA_WIDTH-1:0]   PRDATA_s  [NUM_APB_MASTERS];
+  logic                        PREADY_s  [NUM_APB_MASTERS];
   logic                        PSLVERR_s [NUM_APB_MASTERS];
   
   // To slave
-  logic PSEL_m;
+  logic                      PSEL_m;
   logic [APB_ADDR_WIDTH-1:0] PADDR_m;
-  logic PWRITE_m;
+  logic                      PWRITE_m;
   logic [APB_DATA_WIDTH-1:0] PWDATA_m;
-  logic PENABLE_m;
-  logic PSTRB_m;      
-  logic PPROT_m;      
+  logic                      PENABLE_m;
+  logic [APB_STRB_WIDTH-1:0] PSTRB_m;      
+  logic [2:0]                PPROT_m;      
   logic [APB_DATA_WIDTH-1:0] PRDATA_m;
-  logic PREADY_m;
-  logic PSLVERR_m;
+  logic                      PREADY_m;
+  logic                      PSLVERR_m;
 
   always #(CLK_PERIOD/2) PCLK = ~PCLK;
 

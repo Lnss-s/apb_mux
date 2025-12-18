@@ -2,7 +2,7 @@ module apb_mux_top #(
     parameter NUM_APB_MASTERS = 16,
     parameter APB_ADDR_WIDTH  = 32,
     parameter APB_DATA_WIDTH  = 32,
-    parameter APB_STRB_WIDTH  = 4
+    parameter APB_STRB_WIDTH  = APB_DATA_WIDTH/4
 )(
     input                       PRESETn,
     input                       PCLK,
@@ -13,8 +13,8 @@ module apb_mux_top #(
     input                                  PWRITE_s  [NUM_APB_MASTERS],
     input      [APB_DATA_WIDTH-1:0]        PWDATA_s  [NUM_APB_MASTERS],
     input                                  PENABLE_s [NUM_APB_MASTERS],
-    input      [APB_STRB_WIDTH-1:0]          PSTRB_s   [NUM_APB_MASTERS],  
-    input                                  PPROT_s   [NUM_APB_MASTERS],  
+    input      [APB_STRB_WIDTH-1:0]        PSTRB_s   [NUM_APB_MASTERS],  
+    input      [2:0]                       PPROT_s   [NUM_APB_MASTERS],  
     output reg [APB_DATA_WIDTH-1:0]        PRDATA_s  [NUM_APB_MASTERS],
     output reg                             PREADY_s  [NUM_APB_MASTERS],
     output reg                             PSLVERR_s [NUM_APB_MASTERS],
@@ -25,8 +25,8 @@ module apb_mux_top #(
     output reg                      PWRITE_m,
     output reg [APB_DATA_WIDTH-1:0] PWDATA_m,
     output reg                      PENABLE_m,
-    output reg                      PSTRB_m,      
-    output reg                      PPROT_m,      
+    output reg [APB_STRB_WIDTH-1:0] PSTRB_m,      
+    output reg [2:0]                PPROT_m,      
     input      [APB_DATA_WIDTH-1:0] PRDATA_m,
     input                           PREADY_m,
     input                           PSLVERR_m

@@ -1,5 +1,5 @@
 xrun(64): 24.03-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s001: Started on Nov 04, 2025 at 17:17:37 MSK
+TOOL:	xrun(64)	24.03-s001: Started on Dec 18, 2025 at 21:56:30 MSK
 xrun
 	-compile
 	-64bit
@@ -8,9 +8,6 @@ xrun
 	-xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work
 	-l /home/Lnss_313/Desktop/apb_mux/build/compile.log
 Recompiling... reason: file './apb_mux_xcelium.sv' is newer than expected.
-	expected: Tue Nov  4 17:11:02 2025
-	actual:   Tue Nov  4 17:17:37 2025
-file: /home/Lnss_313/Desktop/apb_mux/build/../tb/tb_apb_mux.sv
-	module worklib.tb_apb_mux_top:sv
-		errors: 0, warnings: 0
-TOOL:	xrun(64)	24.03-s001: Exiting on Nov 04, 2025 at 17:17:38 MSK  (total: 00:00:01)
+	expected: Thu Dec 18 21:55:50 2025
+	actual:   Thu Dec 18 21:56:30 2025
+TOOL:	xrun(64)	24.03-s001: Exiting on Dec 18, 2025 at 21:56:30 MSK  (total: 00:00:00)

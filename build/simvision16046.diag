@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Fri Nov 21 12:28:07 PM MSK 2025
+SimVision started.
+Version: TOOL:  simvision(64)   24.03-s001
+User: Lnss_313
+Host: miet-cad-edu
+Platform: Linux/x86_64/3.10.0-1160.119.1.el7.x86_64
+Started: Fri Nov 21 12:28:07 PM MSK 2025
+Command: /local/tools/cadence/XCELIUM/24.03.001/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:miet-cad-edu:43978 -64BIT -nocopyright
+Work Directory: /home/Lnss_313/Desktop/apb_mux/build
+ 
+*** Message Type: info ***
+When: Fri Nov 21 12:28:08 PM MSK 2025
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Fri Nov 21 12:28:09 PM MSK 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Fri Nov 21 12:28:09 PM MSK 2025
+Connect to Simulator
+      Design: tb_apb_mux_top_opt
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim(64)       24.03-s001
+        User: Lnss_313
+        Host: miet-cad-edu
+Time Started: Fri Nov 21 12:28:07 PM MSK 2025
+  Process ID: 15993
+   Directory: /home/Lnss_313/Desktop/apb_mux/build
+     Command: xrun -r tb_apb_mux_top_opt -64bit -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -seed 12345 -gui -l /home/Lnss_313/Desktop/apb_mux/build/run.log
+
+ 
+*** Message Type: info ***
+When: Fri Nov 21 12:28:10 PM MSK 2025
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Mon Dec 01 08:26:48 PM MSK 2025
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 09 05:42:44 PM MSK 2025
+Exit XM-Sim: abnormal
+      Design: tb_apb_mux_top_opt
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim(64)       24.03-s001
+        User: Lnss_313
+        Host: miet-cad-edu
+Time Started: Fri Nov 21 12:28:07 PM MSK 2025
+  Process ID: 15993
+   Directory: /home/Lnss_313/Desktop/apb_mux/build
+     Command: xrun -r tb_apb_mux_top_opt -64bit -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -seed 12345 -gui -l /home/Lnss_313/Desktop/apb_mux/build/run.log
+
+ 
+*** Message Type: error ***
+When: Tue Dec 09 05:42:45 PM MSK 2025
+XM-Sim Crashed:
+      Design: tb_apb_mux_top_opt
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL: xmsim(64)       24.03-s001
+        User: Lnss_313
+        Host: miet-cad-edu
+Time Started: Fri Nov 21 12:28:07 PM MSK 2025
+  Process ID: 15993
+   Directory: /home/Lnss_313/Desktop/apb_mux/build
+     Command: xrun -r tb_apb_mux_top_opt -64bit -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -seed 12345 -gui -l /home/Lnss_313/Desktop/apb_mux/build/run.log
+      Design: tb_apb_mux_top_opt
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:      xmsim(64)       24.03-s001
+        User: Lnss_313
+        Host: miet-cad-edu
+Time Started: Fri Nov 21 12:28:07 PM MSK 2025
+  Process ID: 15993
+   Directory: /home/Lnss_313/Desktop/apb_mux/build
+     Command: xrun -r tb_apb_mux_top_opt -64bit -xmlibdirpath /home/Lnss_313/Desktop/apb_mux/build/work -seed 12345 -gui -l /home/Lnss_313/Desktop/apb_mux/build/run.log
+
+ 
+*** Message Type: info ***
+When: Tue Dec 09 05:42:50 PM MSK 2025
+SimVision Exit.
+ 

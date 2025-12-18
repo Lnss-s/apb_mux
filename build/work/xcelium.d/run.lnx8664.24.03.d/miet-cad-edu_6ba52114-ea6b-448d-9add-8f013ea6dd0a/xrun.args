@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-r
+tb_apb_mux_top_opt
+-64bit
+-xmlibdirpath
+/home/Lnss_313/Desktop/apb_mux/build/work
+-seed
+12345
+-gui
+-l
+/home/Lnss_313/Desktop/apb_mux/build/run.log

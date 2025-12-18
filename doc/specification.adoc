@@ -19,6 +19,8 @@ include::purpose.adoc[leveloffset=+2]
 
 include::basic_function.adoc[leveloffset=+2]
 
+include::features.adoc[leveloffset=+2]
+
 include::configuration_param.adoc[leveloffset=+2]
 
 include::functional_description.adoc[leveloffset=+1]
